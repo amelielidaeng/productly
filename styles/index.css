@@ -1,0 +1,86 @@
+/*note: i've used bg colors to see what im doing better*/
+
+body {
+    display: flex;
+}
+
+.header { 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    height: 78px;
+    background-color: #cacaca;
+}
+
+.header__logo {
+    position: absolute;
+    top: 22px;
+    left: 144px;
+    width: 185px;
+    height: 32px;
+}
+
+/*I don't know what I'm doing wrong with the nav menu
+but I cant get the list to begin at the start of the box?
+its the box doesn't begin where I think it begins?*/
+.menu {
+    position: relative;
+    right: 400px;
+    display: flex;
+    align-items: center;
+    background-color: lightblue;
+    width: 350px; 
+    height: 28px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.menu__list {
+    position: absolute; 
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 49px;
+}
+
+.menu__links {
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.button__signin {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 291px;
+    height: 46px;
+    width: 102px;
+    border: none;
+}
+
+.button__signup {
+    display: flex;
+    align-items: center;
+    background-color: #FF9900;
+    color: white;
+    position: absolute;
+    right: 145px;
+    height: 46px;
+    width: 110px;
+    border: none;
+}
