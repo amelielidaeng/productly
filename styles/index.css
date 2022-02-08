@@ -1,3 +1,9 @@
+body {
+    width: 100%;
+    max-width: 1400px;
+    height: 3843px;
+}
+
 .menu {
     display: flex;
     align-items: center;
@@ -165,3 +171,99 @@ all off and I dont get why? */
     right: 0; 
     display: flex;
 }
+
+.section2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 2211px;
+    height: 543px;
+    position: relative;
+    left: -406px;
+    top: 724px;
+}
+
+.section2__card {
+    width: 1095px;
+    height: 205px;
+    position: absolute;
+    bottom: 177px;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.section2__headline {
+    display: flex; 
+    justify-content: center;
+    text-align: center;
+    width: 539px;
+    height: 138px;
+    font-size: 36px;
+}
+
+.box {
+    position: relative;
+    top: 54px;
+}
+
+.box1 {
+    width: 240px; 
+    height: 178px; 
+}
+
+.box2 {
+    width: 240px; 
+    height: 178px; 
+}
+
+.box3 {
+    width: 240px; 
+    height: 178px; 
+}
+
+.box4 {
+    width: 240px; 
+    height: 204px; 
+}
+
+.box__headline {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+}
+
+.box__text {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+/*I don't know why the button is where it is*/
+.section2__button {
+    display: flex;
+    align-self: flex-end;
+    position: absolute;
+    left: 1027px;
+}
+
+.signupnow { /*this should have a better name - goes for all the button names tbh*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    height: 53px;
+    background: #FF9900;
+    border-radius: 4px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+}
+
