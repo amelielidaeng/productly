@@ -1,10 +1,4 @@
-/*note: i've used bg colors to see what im doing better*/
-
-body {
-    display: flex;
-}
-
-.header { 
+.menu {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -12,10 +6,11 @@ body {
     width: 100%;
     max-width: 1400px;
     height: 78px;
-    background-color: #cacaca;
+/*    background-color: #cacaca;*/
 }
 
-.header__logo {
+.menu__logo {
+    display: flex; 
     position: absolute;
     top: 22px;
     left: 144px;
@@ -23,33 +18,37 @@ body {
     height: 32px;
 }
 
-/*I don't know what I'm doing wrong with the nav menu
-but I cant get the list to begin at the start of the box?
-its the box doesn't begin where I think it begins?*/
-.menu {
-    position: relative;
-    right: 400px;
+.logopic {
+    margin-right: 10px;;
+}
+
+.logotext {
     display: flex;
     align-items: center;
-    background-color: lightblue;
-    width: 350px; 
-    height: 28px;
+}
+
+/*I just cannot get this menu list to work
+when i use the inspect tool the sizes are 
+all off and I dont get why? */
+.menu__list {
+/*  background-color: aliceblue;*/
+    display: flex;
+    align-items: center;
+    list-style: none;
+    position: absolute; 
+    right: 400px;
+    width: 350px;
+    height: 48px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 28px;
+
 }
 
-.menu__list {
-    position: absolute; 
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    margin: 49px;
-}
-
-.menu__links {
+.menu__link {
+    display: flex;;
 }
 
 .button {
@@ -64,23 +63,27 @@ its the box doesn't begin where I think it begins?*/
 }
 
 .button__signin {
+    border: solid 1px #BCD0E5;
+    border-radius: 4px;
+    color: #173A56;
     display: flex;
     align-items: center;
+    background-color: white;
     position: absolute;
     right: 291px;
-    height: 46px;
     width: 102px;
-    border: none;
+    height: 46px;
 }
 
 .button__signup {
+    border: none;
+    border-radius: 4px;
     display: flex;
     align-items: center;
     background-color: #FF9900;
     color: white;
     position: absolute;
     right: 145px;
-    height: 46px;
     width: 110px;
-    border: none;
+    height: 46px;
 }
