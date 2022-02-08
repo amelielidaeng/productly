@@ -274,15 +274,50 @@ the spaces were not reflecting the figma image correctly*/
     height: 600px;
     background-color: lightcoral;
     position: absolute; 
+    display: flex;
     top: 1397px;
     left: 145px;
 }
 
-.infosection__card {
+.infosection1 {
+    height: 574px;
+    background-color: white;
+}
+
+.infosection__card1 {
     width: 486px;
     height: 531px;
     display: flex;
     flex-wrap: wrap;
 }
 
+.infosection__text {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
 
+.infosection__headline {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+}
+
+.infosection__headlinesmall {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.infosection1__image {
+    width: 520px;
+    height: 574px;
+    position: absolute;
+    right: 0px;
+}
