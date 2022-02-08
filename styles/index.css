@@ -50,11 +50,28 @@ all off and I dont get why? */
     font-weight: normal;
     font-size: 14px;
     line-height: 28px;
-
 }
 
 .menu__link {
-    display: flex;;
+    display: flex;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/*okay this is a temporary solution - at least it looks right*/
+.link1 {
+    transform: translateX(-60px)
+}
+
+.link2 {
+    transform: translateX(-40px);
+}
+
+.link3 {
+    transform: translateX(-20px);
 }
 
 .button {
@@ -166,6 +183,10 @@ all off and I dont get why? */
     line-height: 24px;
 }
 
+.playtext {
+    transform: translateX(10px);
+}
+
 .section1__image {
     position: absolute;
     right: 0; 
@@ -272,7 +293,6 @@ the spaces were not reflecting the figma image correctly*/
 .infosection { /*all of them, like fonts etc*/
     width: 1110px; 
     height: 600px;
-    background-color: lightcoral;
     position: absolute; 
     display: flex;
     top: 1397px;
@@ -281,7 +301,6 @@ the spaces were not reflecting the figma image correctly*/
 
 .infosection1 {
     height: 574px;
-    background-color: white;
 }
 
 .infosection__card1 {
@@ -328,6 +347,7 @@ the spaces were not reflecting the figma image correctly*/
     left: 144px;
     width: 1121px;
     height: 521px;
+    transform: translateY(50px)
 }
 
 .infosection2__image {
@@ -338,10 +358,42 @@ the spaces were not reflecting the figma image correctly*/
 .infosection__card2 {
     width: 486px;
     height: 427px;
-    border: solid 2px;
+    position: absolute; 
+    right: 0px;
 }
 
 .checkmark {
-    margin-right: 10px;
-    
+    position: absolute;
 }
+
+.checkmarktext {
+    transform: translateX(50px);
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.infosection3{
+    width: 1110px;
+    height: 609px;
+    position: relative; 
+    transform: translatey(150px);
+}
+
+.infosection__card3 {
+    width: 486px;
+    height: 531px;
+    transform: translateY(30px)
+}
+
+.infosection3__image {
+    position: fixed;
+    right: 0px; /*note to self: look up when position relates to container/body*/
+}
+
+/*why is it aaaaall the way in the middle and not the bottom?*/
+.footer {
+    width: 1109px;
+    height: 308px;
+    background-color: pink;
+}
+
