@@ -321,3 +321,27 @@ the spaces were not reflecting the figma image correctly*/
     position: absolute;
     right: 0px;
 }
+
+.infosection2 {
+    position: relative;
+    bottom: 1162px; 
+    left: 144px;
+    width: 1121px;
+    height: 521px;
+}
+
+.infosection2__image {
+    width: 533px;
+    height: 520px;
+}
+
+.infosection__card2 {
+    width: 486px;
+    height: 427px;
+    border: solid 2px;
+}
+
+.checkmark {
+    margin-right: 10px;
+    
+}
