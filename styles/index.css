@@ -1,7 +1,7 @@
 body {
     width: 100%;
     max-width: 1400px;
-    height: 3843px;
+    min-height: 3843px;
 }
 
 .menu {
@@ -11,7 +11,7 @@ body {
     position: relative;
     width: 100%;
     max-width: 1400px;
-    height: 78px;
+    min-height: 78px;
 }
 
 .menu__logo {
@@ -24,7 +24,7 @@ body {
 }
 
 .logopic {
-    margin-right: 10px;;
+    margin-right: 10px;
 }
 
 .logotext {
