@@ -9,7 +9,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    position: relative;
     width: 100%;
     max-width: 1400px;
     min-height: 78px;
@@ -17,7 +16,6 @@ body {
 
 .menu__logo {
     display: flex; 
-    position: absolute;
     top: 22px;
     left: 144px;
     width: 185px;
@@ -41,8 +39,6 @@ EDIT: bc i removed the list buttons maybe */
     display: flex;
     align-items: center;
     list-style: none;
-    position: absolute; 
-    right: 400px;
     max-width: 350px;
     width: 100%;
     min-height: 48px;
@@ -93,7 +89,6 @@ a {
     display: flex;
     align-items: center;
     background-color: white;
-    position: absolute;
     right: 291px;
     width: 102px;
     height: 46px;
@@ -106,8 +101,6 @@ a {
     align-items: center;
     background-color: #FF9900;
     color: white;
-    position: absolute;
-    right: 145px;
     width: 110px;
     height: 46px;
 }
@@ -117,9 +110,6 @@ a {
 }
 
 .section1 {
-    position: absolute;
-    left: 145px;
-    top: 128px;
     max-width: 1126px;
     width: 100%; 
     min-height: 496px;
@@ -128,8 +118,6 @@ a {
 }
 
 .section1__card {
-    position: absolute; 
-    top: 113px;
     max-width: 518px;
     width: 100%; 
     min-height: 331px; 
@@ -145,7 +133,7 @@ a {
 }
 
 .section1__text {
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -191,8 +179,6 @@ a {
 }
 
 .section1__image {
-    position: absolute;
-    right: 0; 
     display: flex;
 }
 
@@ -206,9 +192,6 @@ the spaces were not reflecting the figma image correctly*/
     max-width: 2211px;
     width: 100%;
     min-height: 543px;
-    position: relative;
-    left: -406px;
-    top: 724px;
 }
 
 .section2__headline {
@@ -223,15 +206,12 @@ the spaces were not reflecting the figma image correctly*/
     max-width: 1095px;
     width: 100%;
     min-height: 205px;
-    position: absolute;
-    top: 100px;
     display: flex; 
     justify-content: space-between;
 }
 
 .box {
-    position: relative;
-    top: 54px;
+
 }
 
 .box1 {
@@ -273,16 +253,12 @@ the spaces were not reflecting the figma image correctly*/
 .section2__button {
     display: flex;
     align-self: flex-end;
-    position: absolute;
-    left: 1027px;
 }
 
 .signupnow { /*this should have a better name - goes for all the button names tbh*/
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    bottom: 90px;
     width: 175px;
     height: 53px;
     background: #FF9900;
@@ -300,7 +276,6 @@ the spaces were not reflecting the figma image correctly*/
     max-width: 1110px;
     width: 100%;
     min-height: 600px;
-    position: absolute; 
     display: flex;
     top: 1397px;
     left: 145px;
@@ -370,12 +345,9 @@ the spaces were not reflecting the figma image correctly*/
     max-width: 486px;
     width: 100%;
     min-height: 427px;
-    position: absolute; 
-    right: 0px;
 }
 
 .checkmark {
-    position: absolute;
 }
 
 .checkmarktext {
@@ -410,16 +382,12 @@ footer {
     max-width: 1109px;
     width: 100%;
     min-height: 308px;
-    position: absolute;
-    left: 160px;
-    transform: translateY(1700px); /*this is also a nödlösning*/
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
 }
 
 .footer__logo {
-    transform: translate(-600px, -130px);
 }
 
 .footer__menu {
@@ -440,9 +408,6 @@ same issue in header. it's annoying.*/
     justify-content: flex-end;
     width: 118px;
     height: 205px;
-    position: absolute;
-    right: 650px;
-    bottom: -5px;
 }
 
 .footer__list2 {
@@ -450,9 +415,6 @@ same issue in header. it's annoying.*/
     justify-content: flex-end;
     width: 141px;
     height: 205px;
-    position: absolute;
-    right: 407px;
-    bottom: -5px;
 }
 
 .membership {
