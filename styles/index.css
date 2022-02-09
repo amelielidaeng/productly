@@ -397,11 +397,66 @@ footer {
     position: absolute;
     left: 160px;
     transform: translateY(1700px); /*this is also a nödlösning*/
-    background-color: pink;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .footer__logo {
+    transform: translate(-600px, -130px);
+}
+
+.footer__menu {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 35px;
+    list-style: none;
     display: flex;
-    flex-direction: row;
-    transform: translateY(80px);
+    flex-direction: column;
+}
+/*the menu doesn't line up with box edge
+probably bc it's a list and I removed the dots?
+same issue in header. it's annoying.*/
+.footer__list1 {
+    display: flex; 
+    justify-content: flex-end;
+    width: 118px;
+    height: 205px;
+    position: absolute;
+    right: 650px;
+    bottom: -5px;
+}
+
+.footer__list2 {
+    display: flex; 
+    justify-content: flex-end;
+    width: 141px;
+    height: 205px;
+    position: absolute;
+    right: 407px;
+    bottom: -5px;
+}
+
+.membership {
+    width: 325px;
+    height: 109px;
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.membership__button {
+    background-color: #FF9900;
+    color: white;
+    width: 131px;
+    height: 39px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 10px;
 }
