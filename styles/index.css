@@ -1,6 +1,7 @@
 body {
     width: 100%;
     max-width: 1400px;
+    width: 100%;
     min-height: 3843px;
 }
 
@@ -42,8 +43,9 @@ EDIT: bc i removed the list buttons maybe */
     list-style: none;
     position: absolute; 
     right: 400px;
-    width: 350px;
-    height: 48px;
+    max-width: 350px;
+    width: 100%;
+    min-height: 48px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -118,8 +120,9 @@ a {
     position: absolute;
     left: 145px;
     top: 128px;
-    width: 1126px; 
-    height: 496px;
+    max-width: 1126px;
+    width: 100%; 
+    min-height: 496px;
     display: flex;
     align-content: center;
 }
@@ -127,8 +130,9 @@ a {
 .section1__card {
     position: absolute; 
     top: 113px;
-    width: 518px; 
-    height: 331px; 
+    max-width: 518px;
+    width: 100%; 
+    min-height: 331px; 
     background-color: white;
 }
 
@@ -199,8 +203,9 @@ the spaces were not reflecting the figma image correctly*/
     display: flex;
     justify-content: center;
     align-content: center;
-    width: 2211px;
-    height: 543px;
+    max-width: 2211px;
+    width: 100%;
+    min-height: 543px;
     position: relative;
     left: -406px;
     top: 724px;
@@ -208,14 +213,16 @@ the spaces were not reflecting the figma image correctly*/
 
 .section2__headline {
     text-align: center;
-    width: 539px;
-    height: 138px;
+    max-width: 539px;
+    width: 100%;
+    min-height: 138px;
     font-size: 36px;
 }
 
 .section2__card {
-    width: 1095px;
-    height: 205px;
+    max-width: 1095px;
+    width: 100%;
+    min-height: 205px;
     position: absolute;
     top: 100px;
     display: flex; 
@@ -290,8 +297,9 @@ the spaces were not reflecting the figma image correctly*/
 }
 
 .infosection { /*all of them, like fonts etc*/
-    width: 1110px; 
-    height: 600px;
+    max-width: 1110px;
+    width: 100%;
+    min-height: 600px;
     position: absolute; 
     display: flex;
     top: 1397px;
@@ -299,12 +307,13 @@ the spaces were not reflecting the figma image correctly*/
 }
 
 .infosection1 {
-    height: 574px;
+    min-height: 574px;
 }
 
 .infosection__card1 {
-    width: 486px;
-    height: 531px;
+    max-width: 486px;
+    width: 100%;
+    min-height: 531px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -334,8 +343,9 @@ the spaces were not reflecting the figma image correctly*/
 }
 
 .infosection1__image {
-    width: 520px;
-    height: 574px;
+    max-width: 520px;
+    width: 100%;
+    min-height: 574px;
     position: absolute;
     right: 0px;
 }
@@ -344,19 +354,22 @@ the spaces were not reflecting the figma image correctly*/
     position: relative;
     bottom: 1162px; 
     left: 144px;
-    width: 1121px;
-    height: 521px;
+    max-width: 1121px;
+    width: 100%;
+    min-height: 521px;
     transform: translateY(50px)
 }
 
 .infosection2__image {
-    width: 533px;
-    height: 520px;
+    max-width: 533px;
+    width: 100%;
+    min-height: 520px;
 }
 
 .infosection__card2 {
-    width: 486px;
-    height: 427px;
+    max-width: 486px;
+    width: 100%;
+    min-height: 427px;
     position: absolute; 
     right: 0px;
 }
@@ -372,15 +385,17 @@ the spaces were not reflecting the figma image correctly*/
 }
 
 .infosection3{
-    width: 1110px;
-    height: 609px;
+    max-width: 1110px;
+    width: 100%;
+    min-height: 609px;
     position: relative; 
     transform: translatey(150px);
 }
 
 .infosection__card3 {
-    width: 486px;
-    height: 531px;
+    max-width: 486px;
+    width: 100%;
+    min-height: 531px;
     transform: translateY(30px)
 }
 
@@ -392,8 +407,9 @@ the spaces were not reflecting the figma image correctly*/
 /*why is it aaaaall the way in the middle and not the bottom? 
 see nödlösning below for a "creative solution"*/
 footer {
-    width: 1109px;
-    height: 308px;
+    max-width: 1109px;
+    width: 100%;
+    min-height: 308px;
     position: absolute;
     left: 160px;
     transform: translateY(1700px); /*this is also a nödlösning*/
@@ -440,8 +456,9 @@ same issue in header. it's annoying.*/
 }
 
 .membership {
-    width: 325px;
-    height: 109px;
+    max-width: 325px;
+    width: 100%;
+    min-height: 109px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -466,6 +483,7 @@ same issue in header. it's annoying.*/
     transform: translateY(-21px);
     border-radius: 4px;
     border-color: #BCD0E5;
-    width: 325px;
-    height: 48px; 
+    max-width: 325px;
+    width: 100%;
+    min-height: 48px; 
 }
