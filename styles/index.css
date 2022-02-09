@@ -391,9 +391,17 @@ the spaces were not reflecting the figma image correctly*/
 }
 
 /*why is it aaaaall the way in the middle and not the bottom?*/
-.footer {
+footer {
     width: 1109px;
     height: 308px;
+    position: absolute;
+    left: 160px;
+    transform: translateY(1700px); /*this is also a nödlösning*/
     background-color: pink;
 }
 
+.footer__logo {
+    display: flex;
+    flex-direction: row;
+    transform: translateY(80px);
+}
