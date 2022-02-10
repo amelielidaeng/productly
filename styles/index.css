@@ -1,29 +1,34 @@
 body {
-    width: 100%;
     max-width: 1400px;
     width: 100%;
-    min-height: 3843px;
+    max-height: 3843px;
+    padding: 20px; 
+    padding-top: 22px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .menu {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     width: 100%;
     max-width: 1400px;
     min-height: 78px;
 }
 
 .menu__logo {
-    display: flex; 
-    top: 22px;
-    left: 144px;
+    display: flex;
     width: 185px;
     height: 32px;
 }
 
 .logopic {
-    margin-right: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .logotext {
@@ -31,13 +36,12 @@ body {
     align-items: center;
 }
 
-/*I just cannot get this menu list to work
-when i use the inspect tool the sizes are 
-all off and I dont get why? 
-EDIT: bc i removed the list buttons maybe */
 .menu__list {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+    transform: translateX(50px);
     list-style: none;
     max-width: 350px;
     width: 100%;
@@ -58,19 +62,6 @@ a {
     text-decoration: none;
 }
 
-/*okay this is a temporary solution - at least it looks right*/
-.link1 {
-    transform: translateX(-60px)
-}
-
-.link2 {
-    transform: translateX(-40px);
-}
-
-.link3 {
-    transform: translateX(-20px);
-}
-
 .button {
     display: flex;
     justify-content: center;
@@ -80,6 +71,7 @@ a {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
+    gap: 30px;
 }
 
 .button__signin {
@@ -105,23 +97,21 @@ a {
     height: 46px;
 }
 
-.section {
-        /*what is the same in all sections? add it here*/
-}
-
-.section1 {
+.section { /*section and section1 are the same but whyyyy cant I move the entire section?*/
+    display: flex;
     max-width: 1126px;
     width: 100%; 
     min-height: 496px;
+}
+
+.section1 {
     display: flex;
-    align-content: center;
 }
 
 .section1__card {
     max-width: 518px;
     width: 100%; 
-    min-height: 331px; 
-    background-color: white;
+    min-height: 331px;
 }
 
 .headline {
@@ -140,9 +130,8 @@ a {
     line-height: 28px;
 }
 
-.section1__button {
+.section1__button {   
     display: flex;
-    align-items: flex-end;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -175,20 +164,13 @@ a {
 }
 
 .playtext {
-    transform: translateX(10px);
+    margin-left: 10px;
 }
-
-.section1__image {
-    display: flex;
-}
-
-/*I changed the positioning a bit in section 2 as
-the spaces were not reflecting the figma image correctly*/
 
 .section2 {
     display: flex;
-    justify-content: center;
-    align-content: center;
+    align-items: center;
+    flex-direction: column;
     max-width: 2211px;
     width: 100%;
     min-height: 543px;
@@ -208,10 +190,6 @@ the spaces were not reflecting the figma image correctly*/
     min-height: 205px;
     display: flex; 
     justify-content: space-between;
-}
-
-.box {
-
 }
 
 .box1 {
@@ -252,7 +230,7 @@ the spaces were not reflecting the figma image correctly*/
 
 .section2__button {
     display: flex;
-    align-self: flex-end;
+    align-self: center;
 }
 
 .signupnow { /*this should have a better name - goes for all the button names tbh*/
@@ -272,13 +250,13 @@ the spaces were not reflecting the figma image correctly*/
     color: white;
 }
 
-.infosection { /*all of them, like fonts etc*/
+.infosection { 
+    display: flex;
+    justify-content: center;
     max-width: 1110px;
     width: 100%;
     min-height: 600px;
-    display: flex;
-    top: 1397px;
-    left: 145px;
+    padding: 30px;
 }
 
 .infosection1 {
@@ -321,18 +299,14 @@ the spaces were not reflecting the figma image correctly*/
     max-width: 520px;
     width: 100%;
     min-height: 574px;
-    position: absolute;
-    right: 0px;
 }
 
 .infosection2 {
-    position: relative;
     bottom: 1162px; 
     left: 144px;
     max-width: 1121px;
     width: 100%;
     min-height: 521px;
-    transform: translateY(50px)
 }
 
 .infosection2__image {
@@ -360,8 +334,6 @@ the spaces were not reflecting the figma image correctly*/
     max-width: 1110px;
     width: 100%;
     min-height: 609px;
-    position: relative; 
-    transform: translatey(150px);
 }
 
 .infosection__card3 {
@@ -372,19 +344,16 @@ the spaces were not reflecting the figma image correctly*/
 }
 
 .infosection3__image {
-    position: fixed;
-    right: 0px; /*note to self: read up on positioning things*/
 }
 
-/*why is it aaaaall the way in the middle and not the bottom? 
-see nödlösning below for a "creative solution"*/
 footer {
-    max-width: 1109px;
+    max-width: 1400px;
     width: 100%;
     min-height: 308px;
     display: flex;
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: space-evenly;
+    margin-bottom: 0px;
 }
 
 .footer__logo {
@@ -400,9 +369,7 @@ footer {
     display: flex;
     flex-direction: column;
 }
-/*the menu doesn't line up with box edge
-probably bc it's a list and I removed the dots?
-same issue in header. it's annoying.*/
+
 .footer__list1 {
     display: flex; 
     justify-content: flex-end;
