@@ -18,6 +18,7 @@ main {
     width: 100%;
     max-width: 1400px;
     min-height: 78px;
+    padding-bottom: 30px;
 }
 
 .menu__logo {
@@ -106,6 +107,7 @@ a {
 
 .section1 {
     display: flex;
+    padding-bottom: 30px;;
 }
 
 .section1__card {
@@ -174,6 +176,7 @@ a {
     max-width: 2211px;
     width: 100%;
     min-height: 543px;
+    padding-bottom: 30px;
 }
 
 .section2__headline {
@@ -231,6 +234,7 @@ a {
 .section2__button {
     display: flex;
     align-self: center;
+    transform: translateY(30px);
 }
 
 .signupnow { /*this should have a better name - goes for all the button names tbh*/
@@ -257,6 +261,7 @@ a {
     width: 100%;
     min-height: 600px;
     padding: 30px;
+    padding-bottom: 40px;
 }
 
 .infosection1 {
@@ -269,6 +274,7 @@ a {
     min-height: 531px;
     display: flex;
     flex-wrap: wrap;
+    margin: 20px;
 }
 
 .infosection__text {
@@ -319,9 +325,11 @@ a {
     max-width: 486px;
     width: 100%;
     min-height: 427px;
+    margin: 20px;
 }
 
 .checkmark {
+    transform: translateY(50px)
 }
 
 .checkmarktext {
@@ -340,7 +348,8 @@ a {
     max-width: 486px;
     width: 100%;
     min-height: 531px;
-    transform: translateY(30px)
+    transform: translateY(30px);
+    margin: 20px;
 }
 
 .infosection3__image {
